@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopper Template</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header {
+           display: flex;
+           justify-content: space-between;
+           font-size: 20px;
+           font-family: Arial;
+           padding: 5px;
+        }
+        .brand-title {
+            font-size: 35px;
+            font-weight: bold;
+        }
+        nav span {
+            margin-right: 20px;
+        }
+        .quick-links span {
+            margin-right: 10px;
+        }
+        article {
+            background-color: black;
+            color:white;
+            font-size: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-top: 10px;
+        }
+        article span {
+            color:gold;
+        }
+        section {
+        }
+        footer {
+            background-color: black;
+            color:white;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr ;
+            font-family: Arial;
+            height: 200px;
+        }
+        .brand-title+div {
+            margin-top: 15px;
+        }
+        .brand-title+div span {
+            margin-right: 10px;
+        }
+        .footer-title {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .footer-title~div {
+            margin-bottom: 15px;
+            color:gray;
+        }
+        address div {
+            margin-bottom: 15px;
+        }
+        .women {
+            background-image: url("images/fashion1.jpg");
+            opacity: 0.6;
+        }
+        .women:hover {
+            opacity: 1;
+        }
+        .men {
+            background-image: url("images/fashion2.jpg");
+            opacity: 0.6;
+        }
+        .men:hover {
+            opacity: 1;
+        }
+        .kids {
+            background-image: url("images/fashion3.png");
+            opacity: 0.6;
+        }
+        .kids:hover {
+            opacity: 1;
+        }
+        main div {
+            height: 450px;
+            background-size: cover;
+        }
+        main {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+        }
+        .main-container {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .title {
+            font-size: 50px;
+            color:white;
+            text-shadow: 2px 2px 2px black;
+            margin-top: 150px;
+            font-weight: bold;
+        }
+        button {
+            width: 200px;
+            height: 50px;
+            background-color: white;
+            border:none;
+        }
+        .product-banner {
+           margin: 50px;
+           display: grid;
+           grid-template-columns: 6fr 6fr;
+        }
+        .left-banner {
+            background-image: url("images/fashion1.jpg");
+            background-size: cover;
+            height: 400px;
+        }
+        .right-banner {
+            background-image: url("images/fashion2.jpg");
+            background-size: cover;
+            height: 500px;
+            margin-left: 30px;
+            position: relative;
+        }
+        .offer {
+            background-color: red;
+            color:white;
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            font-size: 23px;
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-weight: bold;
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <div>
+            <span class="brand-title">Shopper.</span>
+        </div>
+        <div>
+            <nav>
+                <span>Home</span>
+                <span>Catalog</span>
+                <span>Pages</span>
+                <span>Blog</span>
+                <span>Shop</span>
+                <span>Docs</span>
+            </nav>
+        </div>
+        <div class="quick-links">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart"></span>
+        </div>
+     </header>
+     <article>
+        <span class="bi bi-lightning-fill"></span> HAPPY HOLIDAY DEALS ON EVERYTHING <span class="bi bi-lightning-fill"></span>
+     </article>
+      <section>
+         <main>
+            <div class="women">
+               <div class="main-container">
+                  <div class="title">Women</div>
+                  <button>Shop Women <span class="bi bi-arrow-right"></span> </button>
+               </div>
+            </div>
+            <div class="men">
+                <div class="main-container">
+                    <div class="title"> Men</div>
+                    <button>Shop Men <span class="bi bi-arrow-right"></span> </button>
+                 </div>
+            </div>
+            <div class="kids">
+                <div class="main-container">
+                    <div class="title">Kids</div>
+                    <button>Shop Kids <span class="bi bi-arrow-right"></span> </button>
+                 </div>
+            </div>
+         </main>
+         <div class="product-banner">
+            <div class="left-banner">
+               
+            </div>
+            <div class="right-banner">
+                <div class="offer">
+                    50% Off
+                </div>
+            </div>
+         </div>
+      </section>
+     <footer>
+         <div>
+            <div class="brand-title">Shopper.</div>
+            <div>
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-youtube"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-linkedin"></span>
+            </div>
+         </div>
+         <div>
+            <div class="footer-title">SUPPORT</div>
+            <div>Contact Us</div>
+            <div>FAQs</div>
+            <div>Size Guide</div>
+            <div>Shipping & Returns</div>
+         </div>
+         <div>
+            <div class="footer-title">SHOP</div>
+            <div>Men's Shopping</div>
+            <div>Women's Shopping</div>
+            <div>Kids' Shopping</div>
+            <div>Discounts</div>
+         </div>
+         <div>
+            <div class="footer-title">COMPANY</div>
+            <div>Our Story</div>
+            <div>Careers</div>
+            <div>Terms & Conditions</div>
+            <div>Privacy & Cookie policy</div>
+         </div>
+         <div>
+            <div class="footer-title">CONTACT</div>
+            <address>
+                <div>1-202-555-0105</div>
+                <div>1-202-555-0106</div>
+                <div>help@shopper.com</div>
+            </address>
+         </div>
+     </footer>
+</body>
+</html>
